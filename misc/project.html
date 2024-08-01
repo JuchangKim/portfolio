@@ -3,6 +3,16 @@
 <head>
   <title>Personal Project</title>
   <link rel="stylesheet" href="../styles/minimal-table.css">
+   <script>
+        function forceDownload(url, filename) {
+            var link = document.createElement("a");
+            link.href = url;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </head>
 
 <body>
@@ -51,10 +61,12 @@
   <h4>COMP610 Data Structures and Algorithms 2 (JAVA).</h4>
 <a href="https://raw.githubusercontent.com/JuchangKim/portfolio/main/misc/Assignment_2_S1_Release/dist/BinaryMaze.jar" download>Download Binary Maze</a>
   <br>
-  <a href="https://raw.githubusercontent.com/JuchangKim/portfolio/main/misc/Assignment_2_S1_Release/Maze1 (1).txt" download>Maze Text File 1</a>
-  <br>
-  <a href="https://raw.githubusercontent.com/JuchangKim/portfolio/main/misc/Assignment_2_S1_Release/dist/Maze2 (1).txt" download>Maze Text File 2</a>
- <br>
+  <ul>
+        <li><a href="#" onclick="forceDownload('https://juchangkim.github.io/portfolio/misc/Assignment_2_S1_Release/Maze1%20(1).txt', 'Maze1 (1).txt')">Maze Text File 1</a></li>
+        <br>
+        <li><a href="#" onclick="forceDownload('https://juchangkim.github.io/portfolio/misc/Assignment_2_S1_Release/dist/Maze2%20(1).txt', 'Maze2 (1).txt')">Maze Text File 2</a></li>
+        <br>
+    </ul>
   <video width="600" controls>
   <source src="https://github.com/JuchangKim/portfolio/raw/main/images/Screen_Recording_2024-08-01_135208.mp4" type="video/mp4">
  
